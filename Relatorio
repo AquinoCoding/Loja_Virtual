@@ -1,0 +1,28 @@
+Lucas Aquino - 01/06/2021 | 00:47 - Versão 0.3
+
+1° Erro corrigido, estava tendo problema validação da senha, motivo está em não definição da validação,
+correção foi aplicada e problema solucionado, conforme o exemplo da solução
+
+*FORMATO CORRETO*
+>>> senha = PasswordField('Nova Senha', [
+          validators.DataRequired(), 
+          validators.EqualTo('senha_confir')])
+        
+>>> senha_confir  = PasswordField('Repita a Senha')
+
+*FORMATO INCORRETO*
+>>> senha = PasswordField('Nova Senha', [
+          validators.DataRequired(), 
+          validators.EqualTo('confirm')])
+        
+>>> senha_confir  = PasswordField('Repita a Senha')
+
+2° Erro corrigido, falta de importação para fazer o redirecionamento, não havia importado o módulo1 
+"redirect", logo após vê o erro foi importado por meio do from flask import redirect
+
+3° Erro corrigido, falta de importação no banco de dados, faltou importar o módulo na hora de adicionar os
+dados ao banco (ERROR: "db_session.add()") forma (CORRETA: "db.session.add()")
+
+Por fim, projeto está sendo enviado, de forma funcional o cadastro, sendo redirecionado para "tela" pós cadastro
+
+-------------------------------------------------------------------------------------------------------------------------------

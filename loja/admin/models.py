@@ -1,5 +1,4 @@
 from enum import Flag, unique
-
 from sqlalchemy.orm import defaultload
 from loja import db
 
