@@ -15,3 +15,8 @@ class CadastroForms(Form):
 
     check_box = BooleanField('Salvar dados?', [validators.DataRequired()])
     
+
+class LoginForms(Form):
+
+    email = StringField('Email', [validators.length(min=6, max=25)])
+    senha = PasswordField('Senha', [validators.DataRequired()])

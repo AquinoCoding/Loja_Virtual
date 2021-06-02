@@ -2,7 +2,7 @@ from enum import Flag, unique
 from sqlalchemy.orm import defaultload
 from loja import db
 
-class SaveMod(db.Model):
+class UserMod(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     usuario = db.Column(db.String(40), unique=True, nullable=False)

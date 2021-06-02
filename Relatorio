@@ -26,3 +26,20 @@ dados ao banco (ERROR: "db_session.add()") forma (CORRETA: "db.session.add()")
 Por fim, projeto está sendo enviado, de forma funcional o cadastro, sendo redirecionado para "tela" pós cadastro
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 02/06/2021 | 01:29 - Versão 0.4
+
+Alteração no Class de cadastro de usuario, de SaveMod para UserMod, foi feito todas as transições para a nova
+nomeclatura.
+
+Criação da parte de login e validação inicialização da página administrativa, concluído com sucesso hoje.
+
+Criação de novos layouts como 'index.html', 'login.html' e 'mensagens.html'
+
+Criação e teste de novos usuarios
+
+1° Problema encontrado pós fazer cadastro a mensagem de bem-vindo e cadastro feito com sucesso estão, vindo juntas
+
+1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login
+
+-------------------------------------------------------------------------------------------------------------------------------
