@@ -66,3 +66,7 @@ da outra aplicação de rota
 1° Problema encontrado pós fazer cadastro a mensagem de bem-vindo e cadastro feito com sucesso estão, vindo juntas
 
 1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login
+
+banco de dados foi resetado nessa aplicação
+
+-------------------------------------------------------------------------------------------------------------------------------
