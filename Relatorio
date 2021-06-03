@@ -43,3 +43,26 @@ Criação e teste de novos usuarios
 1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 03/06/2021 | 01:13 - Versão 0.4
+
+1° Problema na cor da notificação sobre algo ocorrido, foi corrigido problema estava em uma sintaxe dentro do HTML no caminha
+"/template/mensagens.html" foi removido da linha da linha 06 o "danger "<div class="alert alert-danger{{ category }}">
+{{ message }}</div>"
+e ficou da seguinte forma <div class="alert alert-{{ category }}">{{ message }}</div>
+
+Cadastro de categoria não está funcional devido ao um erro no banco de dados e no SqlAlchemy ainda busco solução para continuar 
+com a Implementação o erro encontrado é:
+
+" sqlalchemy.exc.IntegrityError
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: categorias.nome
+[SQL: INSERT INTO categorias (nome) VALUES (?)]
+[parameters: (None,)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) "
+
+Porém o cadastro de marca já está funcional, achei interessante este erro anterior devido ser bem similar ao código
+da outra aplicação de rota  
+
+1° Problema encontrado pós fazer cadastro a mensagem de bem-vindo e cadastro feito com sucesso estão, vindo juntas
+
+1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login

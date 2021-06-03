@@ -9,6 +9,7 @@ import os
 
 # Definidor de nome da rota visual no navegador
 @app.route('/admin')
+
 # Definidor do nome da rota no código conforme o nome da função
 def admin():
     if 'email' not in session:
@@ -58,7 +59,7 @@ def login():
 
         if user and bcrypt.check_password_hash(user.senha, form.senha.data):
             session['email'] = form.email.data
-            flash(f'{form.email.data} Seja Bem-vindo Novamente', 'sucess')
+            flash(f'{form.email.data} Login feito com sucesso', 'sucess')
             return redirect(request.args.get('next') or url_for('admin'))
         else: 
             flash('Email ou Senha Incorreto', 'danger')

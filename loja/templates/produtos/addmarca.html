@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="cont">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            
+            {% if marcas %}
+                <h2 class="text-center mt-5">Cadastro de Marcas</h2>
+                <form action="", method="POST">
+                    <input type="text" name="marca" class="form-control">
+                    <input type="submit" value="Cadastrar" class="btn btn-success mt-2">
+                </form>
+
+            {% else %}
+                <h2 class="text-center mt-5">Cadastro de Categorias</h2>
+                <form action="", method="POST">
+                    <input type="text" name="categorias" class="form-control">
+                    <input type="submit" value="Cadastrar" class="btn btn-success mt-2">
+                </form>
+            {% endif %}
+            {% include "mensagens.html" %}
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+</div>
+
+{% endblock content %}

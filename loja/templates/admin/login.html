@@ -6,8 +6,9 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
+    <div class="text-center h1 text-success"> Login </div>
 
-    <div class="text-center h1 text-black-50"> Login </div>
+    {% include "mensagens.html" %}
 
     <form method="post" enctype="multipart/form-data">
         <div>
@@ -15,7 +16,7 @@
             {{ render_field(form.senha, class="form-control") }}
 
         </div>
-        <p><input type="submit" value="Entrar" class="btn btn-dark mt-2"></p>
+        <p><input type="submit" value="Entrar" class="btn btn-success"></p>
     </form>
     <div class="col-md-4"></div>
 </div>

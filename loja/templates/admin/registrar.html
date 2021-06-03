@@ -2,9 +2,10 @@
 
 {% block content %}
 
-<div class="text-center h1 text-black-50"> Registrar </div>
 
 <div class="container">
+    {% include "mensagens.html" %}
+    <div class="text-center text-success h1"> Registrar </div>
     {% from "formshelp.html" import render_field %}
 <form method="post" enctype="multipart/form-data">
   <div>
@@ -17,7 +18,7 @@
     <input type="file" name="foto">
 
   </div>
-  <p><input type="submit" value="Registrar" class="btn btn-dark mt-2"></p>
+  <p><input type="submit" value="Registrar" class="btn btn-success"></p>
 </form>
 
 </div>

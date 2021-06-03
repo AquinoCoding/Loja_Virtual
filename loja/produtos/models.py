@@ -1,0 +1,13 @@
+from loja import db
+
+class Marcas(db.Model):
+
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(20), nullable=False, unique=True)
+
+class Categorias(db.Model):
+    
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(20), nullable=False, unique=True)
+
+db.create_all()
