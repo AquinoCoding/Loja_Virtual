@@ -7,6 +7,10 @@ from .forms import CadastroForms, LoginForms
 from .models import UserMod
 import os
 
+@app.route('/')
+def main():
+   return 'Seja Bem vindo ao AquinoSistem' 
+
 # Definidor de nome da rota visual no navegador
 @app.route('/admin')
 

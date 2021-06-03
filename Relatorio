@@ -60,7 +60,7 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint fail
 [parameters: (None,)]
 (Background on this error at: http://sqlalche.me/e/14/gkpj) "
 
-Porém o cadastro de marca já está funcional, achei interessante este erro anterior devido ser bem similar ao código
+* Porém o cadastro de marca já está funcional, achei interessante este erro anterior devido ser bem similar ao código
 da outra aplicação de rota  
 
 1° Problema encontrado pós fazer cadastro a mensagem de bem-vindo e cadastro feito com sucesso estão, vindo juntas
@@ -70,3 +70,12 @@ da outra aplicação de rota
 banco de dados foi resetado nessa aplicação
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4
+
+1° Solução para problema com o banco de dados variavel no HTML estava diferente na chamada na routa "categorias" a forma
+correta é "categoria"
+
+
+
+
