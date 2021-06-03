@@ -44,7 +44,7 @@ def registrar():
 
 # Mensagens e redirecinamento do para a página pós cadastro
 
-        flash(f'{form.nome.data} Obrigado por fazer seu registro', 'sucess')
+        flash(f'{form.nome.data} Obrigado por fazer seu registro', 'success')
         return redirect(url_for('admin'))
 
 # Renderização do template da página
@@ -55,15 +55,14 @@ def registrar():
 def login():
 
     form = LoginForms(request.form)
-    
 
     if request.method == 'POST' and form.validate():
 
-        user = UserMod.query.filter_by(email=form.email.data).first() 
+        user = UserMod.query.filter_by(email=form.email.data).first()
 
         if user and bcrypt.check_password_hash(user.senha, form.senha.data):
             session['email'] = form.email.data
-            flash(f'{form.email.data} Login feito com sucesso', 'sucess')
+            flash(f'{form.email.data} Login feito com sucesso', 'success')
             return redirect(request.args.get('next') or url_for('admin'))
         else: 
             flash('Email ou Senha Incorreto', 'danger')
