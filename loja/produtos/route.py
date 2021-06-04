@@ -1,6 +1,7 @@
 from datetime import time
 from flask import redirect, render_template, url_for, flash, request
 from loja import db, app
+from .forms import AdicionarProdutos
 from .models import Marcas, Categorias
 
 @app.route('/cadastro-marcas', methods=['GET', 'POST'])
@@ -29,3 +30,9 @@ def cadastro_categ():
         return redirect(url_for('cadastro_categ'))
 
     return render_template('/produtos/addmarca.html', title='Cadastro de Categorias')
+
+
+@app.route('/adicionar-produtos', methods=['GET', 'POST'])
+def adicionar_prod():
+    #form =  
+

@@ -76,6 +76,12 @@ Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4
 1° Solução para problema com o banco de dados variavel no HTML estava diferente na chamada na routa "categorias" a forma
 correta é "categoria"
 
+2° Cores de notificações solucionadas
+
+banco de dados foi resetado nessa aplicação
+
+
+
 
 
 
