@@ -80,6 +80,21 @@ correta é "categoria"
 
 banco de dados foi resetado nessa aplicação
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4
+
+"mt-4" para margin-top no Bootstrapp aplicado no registrar entre o botão "OpenFile" e "Registrar"
+
+Alteração nos formulários grandes, fiz adição de um Background para formulários maiores, alterei botões para "dark"
+
+Fiz a criação do cadastro de produtos e alterei a url de rota para "cadastro-produtos"
+
+1° Problema encontrado pós fazer cadastro a mensagem de bem-vindo e cadastro feito com sucesso estão, vindo juntas
+
+1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 

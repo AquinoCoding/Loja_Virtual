@@ -32,7 +32,7 @@ def cadastro_categ():
     return render_template('/produtos/addmarca.html', title='Cadastro de Categorias')
 
 
-@app.route('/adicionar-produtos', methods=['GET', 'POST'])
+@app.route('/cadastro-produtos', methods=['GET', 'POST'])
 def adicionar_prod():
-    #form =  
-
+    form = AdicionarProdutos(request.form)
+    return render_template('produtos/adicionarprodutos.html', title='Cadastrar Produto', form=form)

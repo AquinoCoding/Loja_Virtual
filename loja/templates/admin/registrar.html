@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container bg-secondary p-5">
   {% include "mensagens.html" %}
-  <div class="text-center text-success h1"> Registrar </div>
+  <div class="text-center text-dark h1"> Registrar </div>
   {% from "formshelp.html" import render_field %}
     <form method="post" enctype="multipart/form-data">
       <div>
@@ -13,10 +13,9 @@
         {{ render_field(form.email, class="form-control") }}
         {{ render_field(form.senha, class="form-control") }}
         {{ render_field(form.senha_confir, class="form-control") }}
-        {{ render_field(form.check_box) }}
-        <input type="file" name="foto">
+        <input type="file" name="foto" class="mt-2">
       </div>
-      <p><input type="submit" value="Registrar" class="btn btn-success"></p>
+      <p><input type="submit" value="Cadastrar" class="mt-4 btn btn-dark"></p>
 
     </form>
 </div>

@@ -12,8 +12,6 @@ class CadastroForms(Form):
         validators.EqualTo('senha_confir')])
         
     senha_confir  = PasswordField('Repita a Senha')
-
-    check_box = BooleanField('Salvar dados?', [validators.DataRequired()])
     
 
 class LoginForms(Form):

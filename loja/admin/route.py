@@ -23,7 +23,6 @@ def admin():
     return render_template('admin/index.html', title='Gerenciador de Página')
 
 
-
 @app.route('/registrar', methods=['GET', 'POST'])
 def registrar():
     form = CadastroForms(request.form)
