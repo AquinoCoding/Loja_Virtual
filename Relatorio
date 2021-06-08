@@ -71,7 +71,7 @@ banco de dados foi resetado nessa aplicação
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4
+Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4.4
 
 1° Solução para problema com o banco de dados variavel no HTML estava diferente na chamada na routa "categorias" a forma
 correta é "categoria"
@@ -82,7 +82,7 @@ banco de dados foi resetado nessa aplicação
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-Lucas Aquino - 03/06/2021 | 14:33 - Versão 0.4
+Lucas Aquino - 06/06/2021 | 14:33 - Versão 0.4.8
 
 "mt-4" para margin-top no Bootstrapp aplicado no registrar entre o botão "OpenFile" e "Registrar"
 
@@ -95,6 +95,32 @@ Fiz a criação do cadastro de produtos e alterei a url de rota para "cadastro-p
 1° Implementação possível, adcionar nome do usuario ao invés de usar o email na hora da mensagens de entrada pós login
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 07/06/2021 | 23:13 - Versão 0.4.9
+
+Implementação das categorias e marcas no cadastro de produtos, (tive problema na hora da implementação pois a nomeclatura
+funcional foi "categorias" e não "categoria", fiz a alteração e funcionou)
+
+Adicão de dados ao Banco, para teste com categoria e marca
+
+Resolução de como RESOLVER PROBLEMA DE "flask_uploads: ImportError: cannot import name 'secure_filename'"
+Adicione esses imports para dentro da pasta flask_uploads --> flask_uploads.py
+
+        from werkzeug.utils import secure_filename
+        from werkzeug.datastructures import  FileStorage
+
+Problema não solucionado "TypeError: storage must be a werkzeug.FileStorage"
+
+Foi encontrado muitos problemas relacionados ao werkzeug
+
+Foi feito toda a criação de banco de dados das imagens que terão upload, por meio do basedir
+
+Reset no banco de dados
+
+Versão finalizada com alguns erros
+
+
+
 
 
 

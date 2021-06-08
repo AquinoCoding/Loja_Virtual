@@ -18,6 +18,22 @@
                 {{ render_field(form.desconto, class="form-control", placeholder="Desconto do Produto") }}
                 {{ render_field(form.quantidade, class="form-control", placeholder="Quantidade") }}
                 
+                <label for="marca" >Marcas</label>
+                <select name="marca" id="marca" class="form-control" required>
+                    <option value="">Selecione uma Marca</option>
+                    {% for marca in marcas %}
+                    <option value="marca.id">{{marca.nome}}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="categoria">Categorias</label>
+                <select name="categoria" id="categoria" class="form-control" required>
+                    <option name="">Selecione uma Categoria</option>
+                    {% for categoria in categorias %}
+                    <option value="categoria.id">{{categoria.nome}}</option>
+                    {% endfor %}
+                </select>
+
                 {{ render_field(form.descricao, class="form-control", placeholder="Descrição do Produto", rows="10") }}
                 {{ render_field(form.cores, class="form-control", placeholder="Cores") }}
 
@@ -40,9 +56,7 @@
 
             </form>
     </div>
-
     <div class="col-md2"></div>
-
 </div>
 
 {% endblock content %}
