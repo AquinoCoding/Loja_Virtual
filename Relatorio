@@ -1,3 +1,10 @@
+pip install flask-bcrypt                        |  Python 3.9.1 64-bit
+pip install Flask-SQLALchemy                    |  Bootstrapp
+pip install flask-wtf                           |  sqlite3
+pip install flask-uploads
+
+----------------------------------------------------------------------------------------------------------------
+
 Lucas Aquino - 01/06/2021 | 00:47 - Versão 0.3
 
 1° Erro corrigido, estava tendo problema validação da senha, motivo está em não definição da validação,
@@ -12,7 +19,7 @@ correção foi aplicada e problema solucionado, conforme o exemplo da solução
 
 *FORMATO INCORRETO*
 >>> senha = PasswordField('Nova Senha', [
-          validators.DataRequired(), 
+          validators.DataRequired(),
           validators.EqualTo('confirm')])
         
 >>> senha_confir  = PasswordField('Repita a Senha')
@@ -119,6 +126,16 @@ Reset no banco de dados
 
 Versão finalizada com alguns erros
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+Lucas Aquino - 07/06/2021 | 23:13 - Versão 0.4.9
+
+1° Problema encontrado na diversificação de variaveis com a nomeclatura "img_1" != "image_1" foi redefinido as
+variaveis e o problema foi corrigido após vários erros que não apontavam para tal problema.
+
+Parte de registro do produto com, categoria, marca e os demais objetos do cadastro foi definido
+
+Foi dados novamento Reset no Banco de Dados
 
 
 
